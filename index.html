@@ -4,6 +4,40 @@
 	<title>My Project</title>
 </head>
 <body>
+	
+	<p id="myParagraph" onmouseenter="changeColor();" onmouseout="defaultColor();">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+
+	<script type="text/javascript">
+
+		 function displaymessage() {
+		 	var a =document.register.username.value;
+		 	document.getElementById('myParagraph').innerHTML+=a;
+		 }
+		
+		function changeColor() {
+			document.getElementById('myParagraph').style.color="red";
+
+		}
+
+
+		function defaultColor() {
+			document.getElementById('myParagraph').style.color="black";
+
+		}
+
+		 function greet() {
+		 	document.getElementById('myParagraph').innerHTML="Hello! Good Afternoon";
+		 }
+	</script>
+
+
 
 </body>
 </html>
